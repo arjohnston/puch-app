@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Analytics } from '@vercel/analytics/react';
 
 const App: React.FunctionComponent = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FunctionComponent = () => {
           Learn React
         </a>
       </header>
+      <Analytics />
     </div>
   );
 };
