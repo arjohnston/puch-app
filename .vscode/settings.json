@@ -1,0 +1,21 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/*.js": { "when": "$(basename).ts" },
+    "**/**.js": { "when": "$(basename).tsx" },
+    "**/*.js.map": true,
+    "**/*.d.ts.map": true,
+    "**/*.tsbuildinfo": true,
+    "**/*.d.ts": true
+  },
+  "cSpell.words": ["puch"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
