@@ -17,5 +17,6 @@
     "**/*.d.ts": true
   },
   "cSpell.words": ["puch"],
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.workingDirectories": ["./packages/core", "./apps/website"]
 }
