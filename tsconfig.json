@@ -10,7 +10,11 @@
     "incremental": true,
     "inlineSourceMap": true,
     "isolatedModules": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "esnext",
     "resolveJsonModule": true,
     "target": "ES2020",
@@ -32,8 +36,18 @@
     "outDir": "build",
     "noEmit": true,
     "moduleResolution": "node",
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
