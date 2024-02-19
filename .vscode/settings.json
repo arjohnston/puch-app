@@ -16,7 +16,7 @@
     "**/*.tsbuildinfo": true,
     "**/*.d.ts": true
   },
-  "cSpell.words": ["puch"],
+  "cSpell.words": ["packagejson", "puch"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.workingDirectories": ["./packages/core", "./apps/website"]
 }
