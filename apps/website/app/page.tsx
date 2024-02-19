@@ -1,9 +1,10 @@
-import { Header } from '@puch-app/core';
+import { Footer, Header } from '@puch-app/core';
 
 const Home: React.FunctionComponent = () => {
   return (
     <main>
       <Header>Hello World</Header>
+      <Footer />
     </main>
   );
 };
