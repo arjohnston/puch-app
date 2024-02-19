@@ -31,4 +31,4 @@ yarn-error.log*
 # should commit this, but laptop doesnt support it
 package-lock.json
 
-./next
+.next
