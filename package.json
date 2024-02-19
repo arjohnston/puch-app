@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run dev --workspace apps/website"
+    "dev": "npm run dev --workspace apps/website",
+    "build": "npm run build --workspace apps/website",
+    "start": "npm run start --workspace apps/website",
+    "lint": "npm run lint --workspace apps/website"
   },
   "workspaces": [
     "packages/*",
