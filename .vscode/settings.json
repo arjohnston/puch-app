@@ -1,8 +1,9 @@
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.tslint": "explicit",
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll": true,
+    "source.organizeImports": true,
+    "source.sortMembers": true
   },
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",

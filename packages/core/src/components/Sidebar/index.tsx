@@ -1,9 +1,12 @@
 import styled from '@emotion/styled';
+import { Color } from '../../common';
 
-const Sidebar = styled.div({
-  color: 'red',
+const StyledSidebar = styled.div({
+  color: Color.Blue.B50,
 });
 
-const Component: React.FunctionComponent = () => <Sidebar>Sidebar</Sidebar>;
+const Sidebar: React.FunctionComponent = () => (
+  <StyledSidebar>Sidebar</StyledSidebar>
+);
 
-export default Component;
+export default Sidebar;

@@ -1,6 +1,6 @@
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500'] });
 

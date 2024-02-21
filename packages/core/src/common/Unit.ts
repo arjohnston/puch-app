@@ -1,14 +1,8 @@
-const Unit = {
-  XXS: 4,
-  XS: 8,
-  SM: 12,
-  MD: 16,
-  LG: 24,
-  XL: 32,
-  XXL: 48,
-  XXXL: 64,
-} as const;
-
-export type UnitType = (typeof Unit)[keyof typeof Unit];
-
-export default Unit;
+export const XXS = 4 as const;
+export const XS = 8 as const;
+export const SM = 12 as const;
+export const MD = 16 as const;
+export const LG = 24 as const;
+export const XL = 32 as const;
+export const XXL = 48 as const;
+export const XXXL = 64 as const;

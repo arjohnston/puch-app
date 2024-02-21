@@ -1,18 +1,18 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import { Unit, Text } from '../../common';
 import { Logo } from '../../assets/svg';
+import { Text, Unit } from '../../common';
 
-const Header = styled.header({
+const StyledHeader = styled.header({
   color: 'pink',
   margin: Unit.XXL,
 });
 
-const Component: React.FunctionComponent = () => (
-  <Header>
+const Header: React.FunctionComponent = () => (
+  <StyledHeader>
     <Logo />
-    <Text bold>header</Text>
-  </Header>
+    <Text.Body bold>header</Text.Body>
+  </StyledHeader>
 );
 
-export default Component;
+export default Header;
