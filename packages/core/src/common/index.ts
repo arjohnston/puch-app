@@ -1,3 +1,5 @@
-export { default as Color } from './Color';
-export { default as Unit } from './Unit';
-export { default as Text } from './Text';
+import * as Color from './Color';
+import * as Text from './Text';
+import * as Unit from './Unit';
+
+export { Color, Text, Unit };

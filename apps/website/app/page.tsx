@@ -1,7 +1,7 @@
-import { PageLayout } from '@puch-app/core';
+import PageLayout from './components/PageLayout';
 
-const Home: React.FunctionComponent = () => {
+const Page: React.FunctionComponent = () => {
   return <PageLayout>Hello World</PageLayout>;
 };
 
-export default Home;
+export default Page;

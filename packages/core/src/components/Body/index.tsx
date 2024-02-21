@@ -5,10 +5,10 @@ interface Props {
   children: React.ReactNode;
 }
 
-const Body = styled.div({});
+const StyledBody = styled.div({});
 
-const Component: React.FunctionComponent<Props> = ({ children }: Props) => (
-  <Body>{children}</Body>
+const Body: React.FunctionComponent<Props> = ({ children }: Props) => (
+  <StyledBody>{children}</StyledBody>
 );
 
-export default Component;
+export default Body;
