@@ -1,9 +1,18 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import { Background } from '../../common/Color/Background';
+import { Color, Text, Unit } from '../../common';
 
 const StyledFooter = styled.footer({
-  backgroundColor: Background.White,
+  backgroundColor: Color.Background.Secondary,
+  paddingLeft: Unit.MD,
+  paddingRight: Unit.MD,
+  paddingBottom: Unit.SM,
+  paddingTop: Unit.SM,
+});
+
+const StyledLink = styled.a({
+  color: Color.Link.Primary,
+  fontSize: Text.Size.Small,
 });
 
 const Footer: React.FunctionComponent = () => {
@@ -12,9 +21,9 @@ const Footer: React.FunctionComponent = () => {
 
   return (
     <StyledFooter>
-      <a href={gitCommitUrl} target='_blank' rel='noreferrer noopener'>
+      <StyledLink href={gitCommitUrl} target='_blank' rel='noreferrer noopener'>
         {commitHash}
-      </a>
+      </StyledLink>
     </StyledFooter>
   );
 };

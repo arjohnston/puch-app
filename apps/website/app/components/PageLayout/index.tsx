@@ -5,12 +5,14 @@ interface Props {
 }
 
 const PageLayout: React.FunctionComponent<Props> = ({ children }: Props) => (
-  <>
+  <Core.FlexRowLayout fullHeight>
     <Core.Sidebar />
-    <Core.Header />
-    <Core.Body>{children}</Core.Body>
-    <Core.Footer />
-  </>
+    <Core.FlexColumnLayout fullWidth>
+      <Core.Header />
+      <Core.FlexRowLayout>{children}</Core.FlexRowLayout>
+      <Core.Footer />
+    </Core.FlexColumnLayout>
+  </Core.FlexRowLayout>
 );
 
 export default PageLayout;
