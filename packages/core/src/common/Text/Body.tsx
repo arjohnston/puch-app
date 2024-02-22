@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import * as Unit from '../Unit';
-import type { default as Size } from './Size';
+import { default as Size } from './Size';
 
 interface Props {
   children: React.ReactNode;
@@ -9,31 +8,19 @@ interface Props {
 }
 
 const StyledText = styled.p(
-  ({ fontSize, bold }: { fontSize: number; bold: boolean }) => ({
+  ({ fontSize, bold }: { fontSize: Size; bold: boolean }) => ({
     fontSize,
     fontWeight: bold ? 'bold' : 'normal',
   }),
 );
 
-function fontForSize(size: Size): number {
-  switch (size) {
-    case 'small':
-      return Unit.SM;
-    case 'medium':
-      return Unit.MD;
-    case 'large':
-      return Unit.LG;
-  }
-}
-
 const Body: React.FunctionComponent<Props> = ({
   children,
-  size = 'medium',
+  size = Size.Medium,
   bold = false,
 }) => {
-  const fontSize = fontForSize(size);
   return (
-    <StyledText fontSize={fontSize} bold={bold}>
+    <StyledText fontSize={size} bold={bold}>
       {children}
     </StyledText>
   );

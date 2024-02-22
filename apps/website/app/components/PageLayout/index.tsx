@@ -4,6 +4,8 @@ interface Props {
   children: React.ReactNode;
 }
 
+// TODO: I should be able to style components, but its complaining I cannot dot into the object...
+
 const PageLayout: React.FunctionComponent<Props> = ({ children }: Props) => (
   <Core.FlexRowLayout fullHeight>
     <Core.Sidebar />
