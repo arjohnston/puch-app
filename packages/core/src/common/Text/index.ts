@@ -1,4 +1,4 @@
 import { default as Body } from './Body';
-import type { default as Size } from './Size';
+import { Size } from './Size';
 
 export { Body, Size };

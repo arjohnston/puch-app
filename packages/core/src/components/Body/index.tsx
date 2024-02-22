@@ -5,7 +5,10 @@ interface Props {
   children: React.ReactNode;
 }
 
-const StyledBody = styled.div({});
+const StyledBody = styled.div({
+  display: 'flex',
+  flexDirection: 'column',
+});
 
 const Body: React.FunctionComponent<Props> = ({ children }: Props) => (
   <StyledBody>{children}</StyledBody>
