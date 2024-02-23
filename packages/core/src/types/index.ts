@@ -1,1 +1,4 @@
-export type ValuesOf<T> = T[keyof T];
+import * as Color from './Color';
+import * as Unit from './Unit';
+
+export { Color, Unit };

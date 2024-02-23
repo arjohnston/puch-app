@@ -12,4 +12,4 @@ export enum Blue {
   B50 = '#E3F2FD',
 }
 
-export type Any = White | Blue;
+export type Any = White | Blue | Grey;
