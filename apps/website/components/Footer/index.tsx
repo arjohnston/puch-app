@@ -1,22 +1,24 @@
 import styled from '@emotion/styled';
+import * as Core from '@puch-app/core';
 import React from 'react';
-import { Color, Text, Unit } from '../../common';
 
 const StyledFooter = styled.footer({
-  backgroundColor: Color.Background.Secondary,
-  paddingLeft: Unit.MD,
-  paddingRight: Unit.MD,
-  paddingBottom: Unit.SM,
-  paddingTop: Unit.SM,
+  backgroundColor: Core.Color.Background.Secondary,
+  paddingLeft: Core.Unit.MD,
+  paddingRight: Core.Unit.MD,
+  paddingBottom: Core.Unit.SM,
+  paddingTop: Core.Unit.SM,
 });
 
 const StyledLink = styled.a({
-  color: Color.Link.Primary,
-  fontSize: Text.Size.Small,
+  color: Core.Color.Link.Primary,
+  fontSize: '0.75rem', // TODO: This should come from @core
 });
 
 const Footer: React.FunctionComponent = () => {
-  const commitHash = process.env.VERCEL_GIT_COMMIT_SHA ?? '<development>';
+  const commitHash =
+    process.env.VERCEL_GIT_COMMIT_SHA ??
+    'https://github.com/arjohnston/puch-app';
   const gitCommitUrl = `https://github.com/arjohnston/puch-app/commit/${commitHash}`;
 
   return (

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Unit } from '../../common';
+import { Unit } from '../../types';
 
 const Container = styled.div({
   width: Unit.XXL,

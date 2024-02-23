@@ -1,4 +1,4 @@
-import { ValuesOf } from '../../types';
+import { ValuesOf } from '../../utils';
 import * as Color from './Color';
 
 export const Background = {
