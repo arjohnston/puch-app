@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import * as Core from '@puch-app/core';
 
 const StyledSidebar = styled.div({
-  backgroundColor: Core.Color.Background.Secondary,
+  backgroundColor: Core.Color.Background.Primary,
   paddingLeft: Core.Unit.MD,
   paddingRight: Core.Unit.MD,
   paddingBottom: Core.Unit.SM,

@@ -30,7 +30,7 @@ const PageLayout: React.FunctionComponent<Props> = ({
         <Core.FlexRowLayout
           justifyContent={Core.Layout.JustifyContent.Center}
           alignItems={Core.Layout.AlignItems.Center}
-          backgroundColor={Core.Color.Background.Primary}
+          backgroundColor={Core.Color.Background.Secondary}
         >
           {children}
         </Core.FlexRowLayout>

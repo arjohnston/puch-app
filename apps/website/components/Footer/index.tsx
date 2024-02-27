@@ -3,7 +3,7 @@ import * as Core from '@puch-app/core';
 import React from 'react';
 
 const StyledFooter = styled.footer({
-  backgroundColor: Core.Color.Background.Secondary,
+  backgroundColor: Core.Color.Background.Primary,
   paddingLeft: Core.Unit.MD,
   paddingRight: Core.Unit.MD,
   paddingBottom: Core.Unit.SM,
@@ -16,6 +16,7 @@ const StyledLink = styled.a({
 });
 
 const Footer: React.FunctionComponent = () => {
+  console.log('process.env', process.env);
   const commitHash =
     process.env.VERCEL_GIT_COMMIT_SHA ??
     'https://github.com/arjohnston/puch-app';
