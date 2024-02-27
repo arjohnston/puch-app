@@ -16,35 +16,10 @@ const StyledLink = styled.a({
 });
 
 const Footer: React.FunctionComponent = () => {
-  console.log({
-    VERCEL: process.env.NEXT_PUBLIC_VERCEL,
-    CI: process.env.NEXT_PUBLIC_CI,
-    VERCEL_ENV: process.env.NEXT_PUBLIC_VERCEL_ENV,
-    VERCEL_URL: process.env.NEXT_PUBLIC_VERCEL_URL,
-    VERCEL_BRANCH_URL: process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF,
-    VERCEL_REGION: process.env.NEXT_PUBLIC_VERCEL_REGION,
-    VERCEL_AUTOMATION_BYPASS_SECRET:
-      process.env.NEXT_PUBLIC_VERCEL_AUTOMATION_BYPASS_SECRET,
-    VERCEL_GIT_PROVIDER: process.env.NEXT_PUBLIC_VERCEL_GIT_PROVIDER,
-    VERCEL_GIT_REPO_SLUG: process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG,
-    VERCEL_GIT_REPO_OWNER: process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER,
-    VERCEL_GIT_REPO_ID: process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_ID,
-    VERCEL_GIT_COMMIT_REF: process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF,
-    VERCEL_GIT_COMMIT_SHA: process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA,
-    VERCEL_GIT_COMMIT_MESSAGE:
-      process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_MESSAGE,
-    VERCEL_GIT_COMMIT_AUTHOR_LOGIN:
-      process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_LOGIN,
-    VERCEL_GIT_COMMIT_AUTHOR_NAME:
-      process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_NAME,
-    VERCEL_GIT_PREVIOUS_SHA: process.env.NEXT_PUBLIC_VERCEL_GIT_PREVIOUS_SHA,
-    VERCEL_GIT_PULL_REQUEST_ID:
-      process.env.NEXT_PUBLIC_VERCEL_GIT_PULL_REQUEST_ID,
-  });
-  const commitHash =
-    process.env.VERCEL_GIT_COMMIT_SHA ??
-    'https://github.com/arjohnston/puch-app';
-  const gitCommitUrl = `https://github.com/arjohnston/puch-app/commit/${commitHash}`;
+  const commitHash = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA ?? undefined;
+  const gitCommitUrl = commitHash
+    ? `https://github.com/arjohnston/puch-app/commit/${commitHash}`
+    : 'https://github.com/arjohnston/puch-app';
 
   return (
     <StyledFooter>
